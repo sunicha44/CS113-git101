@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+char name[20];
+char n[5];
+int main()
+{
+    //"Green is note"
+    //printf("Enter name : ");
+    // //gets(name);
+    //fgets(name, 20, stdin);
+    //printf("name = %s\n",name);
+
+    //fgets(n, 5, stdin);
+    //int i = atoi(n); //array to integer
+    double d = atof(n); 
+    long l = atol(n); 
+    //printf("n = %s , i = %d", n, i);
+
+    //puts(n); //Output   
+    //putchar(100); // putchar('d');
+
+    //Booleen in C 
+    //"False"
+    int found = 0;
+    float isIn = 0.0;
+    char isExist = '\0';
+    fgets(n, 5, stdin);
+    int i = atoi(n);
+    if ( i > 0 && i < 20){
+        printf("if\n");
+    }else if (i < 100 || !found && isExist){ // found is false > !found is true
+        printf("else if\n");
+    }else if (i >= 'A' && i <= 'z'){
+        printf("else if 2\n");
+    }else{
+        printf("%d" , i > 0);
+    }
+
+    int count = 0;
+    while (count < i){
+        printf("%d\n", count);
+        count++;
+
+    }
+
+    for (int j = 0; j < i ; j++){
+        printf("%d\n", j);
+    }
+    char p[2] ;
+    while (1){
+        gets(p);
+        if (p == '\0'){
+            break;
+        }
+    }
+
+
+    
+}
